@@ -86,4 +86,7 @@ Just say
 3 multiplied by 7 minus 5 divided by 2
 ```
 
-  
+# Authors
+
+Umakanth Sahu
+P. V. Asrith Reddy
