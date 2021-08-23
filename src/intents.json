@@ -1,0 +1,279 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi","Hey","How are you","Hello","Good day"
+        ],
+        "responses": [
+          "Hey :-)","Hi there, what can I do for you?","Hi there, how can I help?","Hello"
+        ]
+      },
+      {
+        "tag": "youtube",
+        "patterns":[
+          "open youtube","open youtube in browser","youtube","youtube.com","open youtube.com","open yt","yt"
+        ],
+        "responses":[
+          "A: webbrowser.open('www.youtube.com')"
+        ]
+      },
+      {
+        "tag": "facebook",
+        "patterns":[
+          "open facebook","open facebook in browser","facebook","facebook.com","open facebook.com","open fb","fb"
+        ],
+        "responses":[
+          "A: webbrowser.open('www.facebook.com')"
+        ]
+      },
+      {
+        "tag": "instagram",
+        "patterns":[
+          "open instagram","open instagram in browser","instagram","instagram.com","open instagram.com","open ig","ig"
+        ],
+        "responses":[
+          "A: webbrowser.open('www.instagram.com')"
+        ]
+      },
+      {
+        "tag": "twitter",
+        "patterns":[
+          "open twitter","open twitter in browser","twitter","twitter.com","open twitter.com","tweet"
+        ],
+        "responses":[
+          "A: webbrowser.open('www.twitter.com')"
+        ]
+      },
+      {
+        "tag": "duckduckgo",
+        "patterns":[
+          "open duck duck go","open duck duck go in browser","duck duck go","duckduckgo","duckduckgo.com","open duckduckgo.com","open ddg","ddg"
+        ],
+        "responses":[
+          "A: webbrowser.open('www.duckduckgo.com')"
+        ]
+      },
+      {
+        "tag": "amazon",
+        "patterns":[
+          "open amazon","open amazon in browser","amazon","amazon.com","open amazon.com","open amzn","amzn","amazon.in","open amazon.in","amazn","amazon"
+        ],
+        "responses":[
+          "A: webbrowser.open('www.amzon.in')"
+        ]
+      },
+      {
+        "tag": "flipkart",
+        "patterns":[
+          "open flipkart","open flipkart in browser","flipkart","flipkart.com","open flipkart.com","open flpkrt","flpkrt", "open flipkrt", "flipkrt"
+        ],
+        "responses":[
+          "A: webbrowser.open('www.flipkart.com')"
+        ]
+      },
+      {
+        "tag": "quora",
+        "patterns":[
+          "open quora","open quora in browser","quora","quora.com","open quora.com"
+        ],
+        "responses":[
+          "A: webbrowser.open('www.quora.com')"
+        ]
+      },
+            
+      {
+        "tag": "wikipedia",
+        "patterns": [
+          "wikipedia", "search in wikipedia", "search for in wikipedia", "search wikipedia"
+        ],
+        "responses":[
+          "wikipedia:"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later","Have a nice day","Bye!"
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "Google",
+        "patterns": ["google", "open google", "open google in browser", "google.com","google.co.in","open google.com","open google.co.in", "open gogle","open ggle"],
+        "responses": ["A: webbrowser.open('www.google.co.in')"]
+      },
+      {
+        "tag": "time",
+        "patterns": ["what is the time","time","what's the time","time right now","What's the time right now"],
+        "responses": ["R: resp.append(datetime.datetime.now().strftime(\"%H:%M:%S\"))"]
+      },
+      {
+        "tag": "date",
+        "patterns": ["what is today's date","date","what's the date","today's date","date today","what is the date today"],
+        "responses": ["R: resp.append(datetime.datetime.now().strftime(\"%d/%m/%Y\"))"]
+
+      },
+      {
+        "tag": "day",
+        "patterns": ["what is today's day","day","which day of the week is today?","which day is today","day today","what is the day today"],
+        "responses": ["R: resp.append(datetime.datetime.now().strftime(\"%A\"))"]
+
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      },
+      {
+        "tag": "Chrome",
+        "patterns":[
+          "open google chrome", "open chrome","google chrome","chrome", "run google chrome","run chrome"
+        ],
+        "responses": ["A: subprocess.call(chromepath)"]
+      },
+      {
+        "tag": "Edge",
+        "patterns":[
+          "open ms edge", "open edge","ms edge","edge", "run ms edge","run edge", "open microsoft edge","microsoft edge"
+        ],
+        "responses": ["A: subprocess.call(edgepath)"]
+      },
+      {
+        "tag": "Notepad",
+        "patterns": [
+          "open notepad","notepad", "run notepad", "open editor", "open text editor", "open new text file", "open text file","new text file"
+        ],
+        "responses":[
+          "A: system('notepad')"
+        ]
+      },
+      {
+        "tag": "Calculator",
+        "patterns": [
+          "open calculator" , "calculator", "calculations"
+        ],
+        "responses":[
+          "A: system('calc')"
+        ]
+      },
+      {
+        "tag": "Command Prompt",
+        "patterns": [
+          "open command prompt" , "command prompt", "cmd", "open cmd"
+        ],
+        "responses":[
+          "A: system('cmd')"
+        ]
+      },
+      {
+        "tag": "Microsoft Paint",
+        "patterns": [
+          "open ms paint","mspaint","open mspaint" , "ms paint", "paint", "open paint", "open microsoft paint","microsoft paint","paint"
+        ],
+        "responses":[
+          "A: system('mspaint')"
+        ]
+      },
+      {
+        "tag": "task Manager",
+        "patterns": [
+          "open task manager" , "task manager","task mgr","tsk mgr","tskmgr"
+        ],
+        "responses":[
+          "A: system('Taskmgr')"
+        ]
+      },
+      
+      {
+        "tag": "Word",
+        "patterns":[
+          "open microsoft word", "open word", "open ms word", "word", "ms word", "microsoft word", "msword","open msword"
+        ],
+        "responses":[
+          "A: openWord()"
+        ]
+      },
+      {
+        "tag": "Excel",
+        "patterns":[
+          "open microsoft excel", "open excel", "open ms excel", "excel", "ms excel", "microsoft excel", "msexcel", "open msexecl"
+        ],
+        "responses":[
+          "A: openExcel()"
+        ]
+      },
+      {
+        "tag": "Powerpoint",
+        "patterns":[
+          "open microsoft powerpoint", "open powerpoint", "open ms powerpoint", "powerpoint", "ms powerpoint", "microsoft powerpoint",
+          "open ms ppt", "ppt", "open ppt", "open microsoft ppt", "open msppt"
+        ],
+        "responses":[
+          "A: openPPT()"
+        ]
+      },
+      {
+        "tag": "weather",
+        "patterns":[
+          "what's the weather", "weather right now", "weather", "temperature outside","current weather", "current temperature"
+        ],
+        "responses":[
+          "R: resp.append(weather())"
+        ]
+      },
+      {
+        "tag": "age",
+        "patterns": [ "How old are you", "whats your age"],
+
+        "responses":["I was launched in 2021, so I’m still fairly young.", "I'm young little baby still learning..."]
+      },
+      {
+        "tag": "myself",
+        "patterns": ["who are you","what are you","whats your name","who r u","who r you"],
+        "responses": ["I'm DOST an intelligent chatbox. Always at your service...","Hi I'm Dost, How can I help you..?","Hi I'm Dost, How can I serve you..?","Hi I'm Dost, Wht can I do for you..?"]
+      },
+      {
+        "tag":"love",
+        "patterns": ["do you like me","i love you","whom do you love","143","i love u"],
+        "responses": ["I'm in love with Python, A programming Language","I'm commited to Python, A programming Language","I'm already in love with Python, a Programming Language"]
+      },
+      {
+        "tag": "family",
+        "patterns": ["Who’s your daddy?", "Who is your father?","who is your mother", "who is your brother", "who is your sister"],
+        "responses": ["I consider everyone to be my family."]
+      },
+      {
+        "tag": "made by",
+        "patterns":[ "who made you", "how were you made"],
+        "responses":["I was built using Python and torch Library at Visual Studio Code.","I was made using Python and torch Library at Visual Studio Code."]
+      },
+      {
+        "tag": "fine",
+        "patterns": [ "how are you", "hou r u ","how are u","how are you feeling today"],
+        "responses": ["I'm fine, Thank you for caring me...","I'm fine, thanks for your care...","I'm perfectly alright, Thank you for asking me..."]
+      },
+      {
+        "tag": "other assistants",
+        "patterns": [
+          "do you know google assistant","do you know alexa","do you know siri","do you know bixby","do you know cortana",
+          "did you hear about google assistant","did you hear about alexa","did you hear about siri","did you hear about bixby","did you hear about cortana",
+          "who is siri","who is google assistant","who is bixby","who is cortana","who is alexa" 
+        ],
+        "responses": ["Yeah she is my competitor..."]
+      }
+    
+    ]
+}
